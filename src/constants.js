@@ -2,12 +2,12 @@ export const defaultValues = {
   darkMode: true,
   visibleActions: {
     readLater: true,
-    saveBookmark: true,
-    saveTabSet: true,
+    saveBookmark: false,
+    saveTabSet: false,
     openAllUnread: true,
-    openAllBookmarks: true,
-    openAllTabSets: true,
-    openRandomUnread: true,
+    openAllBookmarks: false,
+    openAllTabSets: false,
+    openRandomUnread: false,
   },
 };
 

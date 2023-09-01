@@ -1,4 +1,4 @@
-const baseUrl = 'https://pinboard.in';
+const baseUrl = 'https://readpaperback.com';
 
 export const Pinboard = {
   openAllBookmarks() {
@@ -16,10 +16,10 @@ export const Pinboard = {
   readLater() {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       const tab = tabs[0];
-      const url = `${baseUrl}/add?later=yes&noui=yes&jump=close&url=${encodeURIComponent(
+      const url = `${baseUrl}/add?url=${encodeURIComponent(
         tab.url
       )}&title=${encodeURIComponent(tab.title)}`;
-      window.open(url, 'Pinboard', 'toolbar=no,scrollbars=no,width=1,height=1');
+      window.open(url, 'Paperback', '');
     });
   },
   saveBookmark() {

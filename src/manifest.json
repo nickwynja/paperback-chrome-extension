@@ -1,9 +1,9 @@
 {
-  "name": "Pinboard Pro",
+  "name": "Paperback",
   "manifest_version": 2,
-  "description": "Google Chrome extension for Pinboard (https://pinboard.in).",
-  "author": "Richard Käll",
-  "homepage_url": "http://richardkall.se/google-chrome-extension-for-pinboard-in-pinboard-pro/",
+  "description": "Google Chrome extension for Paperback (https://readpaperback.com).",
+  "author": "Nick Wynja",
+  "homepage_url": "https://readpaperback.com",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -17,7 +17,7 @@
       "128": "icon-white128.png"
     },
     "default_popup": "popup.html",
-    "default_title": "Pinboard Pro"
+    "default_title": "Paperback"
   },
   "commands": {
     "readLater": {
