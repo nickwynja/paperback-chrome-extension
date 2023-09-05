@@ -5,7 +5,7 @@ export const Pinboard = {
     chrome.tabs.create({ url: baseUrl });
   },
   openAllUnread() {
-    chrome.tabs.create({ url: `${baseUrl}/toread/` });
+    chrome.tabs.create({ url: `${baseUrl}/` });
   },
   openAllTabSets() {
     chrome.tabs.create({ url: `${baseUrl}/tabs/` });
